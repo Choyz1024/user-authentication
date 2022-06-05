@@ -1,0 +1,24 @@
+<h1 class='mb-5'>Account Login</h1>
+<form class='w-100' action='/' method='POST'>
+  <div class='input-group w-25 mx-auto mb-3'>
+    <input type='text' id='email' name='email' class='form-control' placeholder='Email' aria-label='Email' />
+  </div>
+  <div class='input-group w-25 mx-auto mb-3'>
+    <input
+      type='password'
+      id='password'
+      name='password'
+      class='form-control'
+      placeholder='Password'
+      aria-label='Password'
+    />
+  </div>
+  {{#if msg}}
+    <div class='msg text-center '>
+      {{msg}}
+    </div>
+  {{/if}}
+  <div class='text-center'>
+    <button type='submit' class='btn btn-dark mt-4'>Sign in</button>
+  </div>
+</form>
